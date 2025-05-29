@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        #container {
+            /* display: flex; */
+            height: 100vh;
+            margin: auto;
+            text-align: center;
+            position: relative;
+            display: none;
+        }
+
+        img {
+            width: 45%;
+        }
+
+
+
+        .a0 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .a1 {
+            width: 20%;
+            position: absolute;
+            top: 0px;
+            left: 350px;
+        }
+
+        .a2 {
+            width: 20%;
+            position: absolute;
+            top: 75px;
+            left: 0px;
+        }
+
+        .a3 {
+            width: 20%;
+            position: absolute;
+            top: 350px;
+            left: 100px;
+        }
+
+        .a4 {
+            width: 20%;
+            position: absolute;
+            top: 580px;
+            left: 330px;
+
+        }
+
+        .a5 {
+            width: 20%;
+            position: absolute;
+            top: 0px;
+            right: 400px;
+        }
+
+        .a6 {
+            width: 20%;
+            position: absolute;
+            top: 270px;
+            right: 150px;
+        }
+
+        .a7 {
+            width: 20%;
+            position: absolute;
+            bottom: 220px;
+            right: 300px;
+        }
+        .line1{
+            width: 11%;
+            height: 2px;
+            background: black;
+            position: absolute;
+            rotate: 30deg;
+            left: 600px;
+            top: 250px;
+        }
+        .line2{
+            width: 27%;
+            height: 2px;
+            background: black;
+            position: absolute;
+            rotate: 15deg;
+            left: 260px;
+            top: 300px;
+        }
+        .line3{
+            width: 21%;
+            height: 2px;
+            background: black;
+            position: absolute;
+            rotate:-7deg;
+            left: 370px;
+            top: 450px;
+        }
+        .line4{
+            width: 13%;
+            height: 2px;
+            background: black;
+            position: absolute;
+            rotate:-25deg;
+            left: 600px;
+            top: 600px;
+        }
+        .line5{
+            width: 13%;
+            height: 2px;
+            background: black;
+            position: absolute;
+            rotate:-35deg;
+            right: 600px;
+            top: 200px;
+        }
+        .line6{
+            width: 17%;
+            height: 2px;
+            background: black;
+            position: absolute;
+            rotate:-9deg;
+            right: 450px;
+            top: 400px;
+        }
+        .line7{
+            width: 14%;
+            height: 2px;
+            background: black;
+            position: absolute;
+            rotate:19deg;
+            right: 550px;
+            top: 550px;
+        }
+        
+
+        #menu {
+            width: 100%;
+            /* padding: 0 15px; */
+            margin: auto;
+
+        }
+
+        #row {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        #col {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #000;
+            /* margin: 1.5% 0; */
+            text-align: center;
+        }
+
+        .i1 {
+            width: 50%;
+            /* line-height: 50%; */
+        }
+
+        .c {
+            text-align: left;
+        }
+
+        @media(min-width:576px) {
+            .container {
+                width: 75%;
+            }
+
+            #menu {
+                display: none;
+            }
+
+            #container {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="a0">
+            <img src="./image/wda.png" alt="">
+            <h1>泰山職訓局</h1>
+            <h2>從零開始的網頁設計課程</h2>
+            <ul>
+                <li>轉職網頁開發人員 掌握就業必備職能</li>
+                <li>由淺入深學習技術 強化職場的競爭力</li>
+            </ul>
+        </div>
+        <div class="a1"><img src="./image/css.png" alt=""><br>CSS3</div>
+        <div class="a2"><img src="./image/html.png" alt=""><br>HTML</div>
+        <div class="a3"><img src="./image/js.png" alt=""><br>JavaScript</div>
+        <div class="a4"><img src="./image/jq.png" alt=""> <br>jQuery</div>
+        <div class="a5"><img src="./image/bs.png" alt=""><br>Bootstrap</div>
+        <div class="a6"><img src="./image/sass.png" alt=""><br>Sass</div>
+        <div class="a7"><img src="./image/vue.png" alt=""><br>Vue.js</div>
+<div class="line1"></div>
+<div class="line2"></div>
+<div class="line3"></div>
+<div class="line4"></div>
+<div class="line5"></div>
+<div class="line6"></div>
+<div class="line7"></div>
+    </div>
+
+    <div id="menu">
+        <div id="row">
+            <div id="col">
+                <img class="i1" src="./image/wda.png" alt="">
+                <h2>泰山職訓局</h2>
+                <h3>從零開始的網頁設計課程</h3>
+                <p>轉職網頁開發人員 掌握就業必備職能 <br>
+                    由淺入深學習技術 強化職場的競爭力</p>
+            </div>
+            <div id="col">
+                <img class="i1" src="./image/html.png" alt="">
+                <h2 class="c">HTML</h2>
+                <p class="c">超文本標記語言（英語：HyperText Markup
+                    Language，簡稱：HTML）是一種用於建立網頁的標準標記語言。HTML是一種基礎技術，常與CSS、JavaScript一起被眾多網站用於設計網頁、網頁應用程式以及行動應用程式的使用者介面[3]。網頁瀏覽器可以讀取HTML檔案，並將其彩現成視覺化網頁。HTML檔案以「.htm」和「.html」為檔名，是一種純文字檔案，可以使用記事本、寫字板等文字編輯器進行編輯，也可以使用Frontpage、Dreamweaver等網頁製作軟體進行快速建立與編輯。HTML描述了一個網站的結構語意隨著線索的呈現，使之成為一種標記語言而非程式語言。
+                </p>
+            </div>
+            <div id="col">
+                <img class="i1" src="./image/css.png" alt="">
+                <h2 class="c">CSS3</h2>
+                <p class="c">階層式樣式表（英語：Cascading Style
+                    Sheets，縮寫：CSS；又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣式表）是一種用來為結構化文件（如HTML文件或XML應用）添加樣式（字型、間距和顏色等）的電腦語言，由W3C定義和維護。CSS3現在已被大部分現代瀏覽器支援，而下一版的CSS4仍在開發中。
+
+                    CSS不僅可以靜態地修飾網頁，還可以配合各種手稿語言動態地對網頁各元素進行格式化。CSS
+                    能夠對網頁中元素位置的排版進行像素級精確控制，支援幾乎所有的字型字號樣式，擁有對網頁對象和模型樣式編輯的能力。
+                </p>
+            </div>
+            <div id="col">
+                <img class="i1" src="./image/js.png" alt="">
+                <h2 class="c">JavaScript</h2>
+                <p class="c">
+                    JavaScript（通常縮寫為JS）是一門基於原型和頭等函式的多範式進階直譯程式語言[9][10]，它支援物件導向程式設計、指令式編程和函數式程式設計。它提供方法來操控文字、陣列、日期以及正規表示式等。不支援I/O，比如網路、儲存和圖形等，但這些都可以由它的宿主環境提供支援。它由Ecma透過ECMAScript實作語言的標準化[9]。目前，它被世界上的絕大多數網站所使用，也被世界主流瀏覽器（Chrome、Firefox、Safari和Opera）所支援。
+                </p>
+            </div>
+            <div id="col">
+                <img class="i1" src="./image/jq.png" alt="">
+                <h2 class="c">jQuery</h2>
+                <p class="c">jQuery是一套跨瀏覽器的JavaScript函式庫，用於簡化HTML與JavaScript之間的操作。[2]約翰·雷西格（John
+                    Resig）在2006年1月的BarCamp
+                    NYC上釋出了第一個版本。目前由Dave
+                    Methvin領導的團隊進行開發。全球前10,000個訪問最高的網站中，有65%使用了jQuery，是曾經最受歡迎的JavaScript函式庫[3][4]。
+                </p>
+            </div>
+            <div id="col">
+                <img class="i1" src="./image/bs.png" alt="">
+                <h2 class="c">Bootstrap</h2>
+                <p class="c">
+                    Bootstrap是一組用於網站和網路應用程式開發的開源前端（所謂「前端」，指的是展現給終端使用者的介面。與之對應的「後端」是在伺服器上面執行的代碼）框架，包括HTML、CSS及JavaScript的框架，提供字體排印、表單、按鈕、導航及其他各種元件及Javascript擴充套件，旨在使動態網頁和Web應用的開發更加容易。
+
+                    Bootstrap是GitHub上面被標記為「Starred」次數排名第四多的專案。Starred次數超過133,000，而分支次數超過了65,000次。[2]</p>
+            </div>
+            <div id="col">
+                <img class="i1" src="./image/sass.png" alt="">
+                <h2 class="c">Sass</h2>
+                <p class="c">Sass（英文全稱：Syntactically Awesome Stylesheets）是一個最初由Hampton Catlin設計並由Natalie
+                    Weizenbaum開發的層疊樣式表語言。[3][4]在開發最初版本之後，Weizenbaum和Chris
+                    Eppstein繼續通過SassScript來繼續擴充Sass的功能。SassScript是一個在Sass檔案中使用的小型手稿語言。</p>
+            </div>
+            <div id="col">
+                <img class="i1" src="./image/vue.png" alt="">
+                <h2 class="c">Vue.js</h2>
+                <p class="c">
+                    Vue.js（/vjuː/，簡稱Vue）是一個用於建立使用者介面的開源MVVM前端JavaScript框架，也是一個建立單頁應用的Web應用框架[4]。Vue.js由尤雨溪建立，由他和其他活躍的核心團隊成員維護[5]。
+
+                    2016年一項針對JavaScript框架的調查表明，Vue有著89%的開發者滿意度。[6]在GitHub上，該專案平均每天能收穫95顆星，[6][7]為GitHub有史以來星標數第3多的專案。
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
